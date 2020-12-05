@@ -10,4 +10,4 @@ cd build
 make
 make install
 cd ../../
-rm -rf glibc-${GLIBC_VERSION} && rm glibc-${GLIBC_VERSION}.tar.gz
+rm glibc-${GLIBC_VERSION}.tar.gz
