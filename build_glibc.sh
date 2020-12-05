@@ -6,7 +6,10 @@ tar xf glibc-${GLIBC_VERSION}.tar.gz
 cd glibc-${GLIBC_VERSION}
 mkdir build
 cd build
-../configure --prefix=/glibc/${GLIBC_VERSION}/64/ --disable-werror --enable-debug=yes
+CC="gcc" CXX="g++" \             
+CFLAGS="-g -g3 -ggdb -gdwarf-4 -Og -Wno-error -fno-stack-protector" \
+CXXFLAGS="-g -g3 -ggdb -gdwarf-4 -Og -Wno-error -fno-stack-protector" \
+../configure --prefix=/glibc/${GLIBC_VERSION}/64/ --disable-werror
 make
 make install
 cd ../../
