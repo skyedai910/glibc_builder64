@@ -1,4 +1,6 @@
 mkdir -p /glibc/$GLIBC_VERSION
+mkdir -p /glibc_sources/$GLIBC_VERSION/64
+cd /glibc_sources/$GLIBC_VERSION/64
 wget http://mirrors.ustc.edu.cn/gnu/libc/glibc-${GLIBC_VERSION}.tar.gz
 tar xf glibc-${GLIBC_VERSION}.tar.gz
 cd glibc-${GLIBC_VERSION}
