@@ -32,22 +32,22 @@ jobs:
         run: docker login --username=${username} --password=${password}
 
       - name: Build glibc2.19
-        run: docker build --build-arg GLIBC_VERSION=2.19 -t skye231/glibc_builder64:2.19 -f ./Dockerfile-16.04 .
+        run: docker build --build-arg GLIBC_VERSION=2.19 -t skye231/glibc_builder64:2.19 -f ./Dockerfile .
       - name: Push glibc2.19
         run: docker push skye231/glibc_builder64:2.19
         
       - name: Build glibc2.23
-        run: docker build --build-arg GLIBC_VERSION=2.23 -t skye231/glibc_builder64:2.23 -f ./Dockerfile-16.04 .
+        run: docker build --build-arg GLIBC_VERSION=2.23 -t skye231/glibc_builder64:2.23 -f ./Dockerfile .
       - name: Push glibc2.23
         run: docker push skye231/glibc_builder64:2.23
         
       - name: Build glibc2.24
-        run: docker build --build-arg GLIBC_VERSION=2.24 -t skye231/glibc_builder64:2.24 -f ./Dockerfile-16.04 .
+        run: docker build --build-arg GLIBC_VERSION=2.24 -t skye231/glibc_builder64:2.24 -f ./Dockerfile .
       - name: Push glibc2.24
         run: docker push skye231/glibc_builder64:2.24
 
       - name: Build glibc2.26
-        run: docker build --build-arg GLIBC_VERSION=2.26 -t skye231/glibc_builder64:2.26 -f ./Dockerfile-16.04 .
+        run: docker build --build-arg GLIBC_VERSION=2.26 -t skye231/glibc_builder64:2.26 -f ./Dockerfile .
       - name: Push glibc2.26
         run: docker push skye231/glibc_builder64:2.26
       
