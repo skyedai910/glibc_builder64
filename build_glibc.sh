@@ -1,4 +1,4 @@
-rm -rf /glibc/$GLIBC_VERSION
+rm -rf /glibc
 mkdir -p /glibc/$GLIBC_VERSION
 mkdir -p /glibc_sources/$GLIBC_VERSION/64
 cd /glibc_sources/$GLIBC_VERSION/64
