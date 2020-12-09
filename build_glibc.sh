@@ -10,5 +10,6 @@ cd build
 ../configure --prefix=/glibc/${GLIBC_VERSION}/64/ --disable-werror --enable-debug=yes
 make
 make install
+make clean
 cd ../../
 rm glibc-${GLIBC_VERSION}.tar.gz
